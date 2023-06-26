@@ -1,0 +1,36 @@
+,regulator,pvalue,qvalue,precision,recall,f1score,TP,regulon_size,imodulon_size,n_regs,single_gene,explained_variance,category,function
+T-box(Met),T-box(Met),2.393494902663821e-15,7.180484707991463e-15,0.24390243902439024,0.8333333333333334,0.37735849056603776,10.0,12.0,41,1.0,,0.0028015432022034936,regulatory,AA Metabolism
+Lysine,Lysine,1.44045352113283e-12,1.44045352113283e-12,0.8333333333333334,0.7142857142857143,0.7692307692307692,5.0,7.0,6,1.0,,0.0017425344035025825,regulatory,AA Metabolism
+Stress/Homeostasis,,,,,,,,,44,,,0.00026262898975182303,functional,Stress Response
+recBCD,,,,,,,,,10,,,0.0,functional,DNA Repair
+FMN-Box (Riboswitch),FMN-Box (Riboswitch),1.8287694409548232e-11,1.8287694409548232e-11,0.8,1.0,0.888888888888889,4.0,4.0,5,1.0,,0.0004993665522099455,regulatory,Vitamin Metabolism
+SG_1,,,,,,,,,31,,True,0.0,single_gene,Single Gene
+RP-Operon-1,,,,,,,,,35,,,0.04780923713067453,functional,Ribosomal Protein Synthesis
+ArgR,ArgR,1.1665687103867216e-12,4.666274841546886e-12,0.3157894736842105,1.0,0.4799999999999999,6.0,6.0,19,1.0,,0.001938986406138321,regulatory,AA Metabolism
+FabT,FabT,0.0,0.0,1.0,1.0,1.0,13.0,13.0,13,1.0,,0.0,regulatory,Fatty Acid Synthesis
+Nar,,,,,,,,,21,,,0.004938597194426464,functional,Anaerobic Respiration
+Sugar Fermentation Regulator,,,,,,,,,30,,,0.0,functional,Anaerobic Respiration
+Intestinal Carbohydrate Utilization,,,,,,,,,53,,,0.0,functional,Anaerobic Respiration
+TPP Riboswitch,TPP Riboswitch,6.472036344161533e-16,1.94161090324846e-15,0.5,1.0,0.6666666666666666,7.0,7.0,14,1.0,,0.0,regulatory,Vitamin Metabolism
+CcpA,CcpA,5.9618202561948e-18,3.57709215371688e-17,0.4594594594594595,0.3541666666666667,0.4000000000000001,17.0,48.0,37,1.0,,0.0,regulatory,Anaerobic Respiration
+YxeR,YxeR,1.2281649811564402e-07,1.2281649811564402e-07,0.3333333333333333,1.0,0.5,3.0,3.0,9,1.0,,0.0,regulatory,Antibiotic Resistance
+Fe-S Cluster Metabolism,,,,,,,,,17,,,0.00014949781108086757,functional,Metal Ion Homeostasis
+RP-Operon-2,,,,,,,,,12,,,0.0016801789052371952,functional,Ribosomal Protein Synthesis
+uncharacterized-1,,,,,,,,,5,,,0.0,uncharacterized,Uncharacterized
+Zur,Zur,8.187766541042933e-08,2.45632996231288e-07,0.375,1.0,0.5454545454545454,3.0,3.0,8,1.0,,0.0008178871418412781,regulatory,Metal Ion Homeostasis
+DeoR,DeoR,3.308365226297251e-08,1.3233460905189004e-07,0.25,0.8,0.38095238095238093,4.0,5.0,16,1.0,,0.00280609637780016,regulatory,Anaerobic Respiration
+Oxidative Stress Response,,,,,,,,,31,,,0.0,functional,Stress Response
+Isoprenoid Biosynthesis and Adaptive Response,,,,,,,,,85,,,0.024552640711137053,functional,Secondary Metabolites
+PerR,PerR,3.611667834014618e-15,3.611667834014618e-15,0.6666666666666666,1.0,0.8,6.0,6.0,9,1.0,,0.002819648323456936,regulatory,Stress Response
+PurR,PurR,6.2995640796856375e-21,1.2599128159371275e-20,0.5238095238095238,0.8461538461538461,0.6470588235294118,11.0,13.0,21,1.0,,0.0,regulatory,Nucleotide Metabolism
+PyrR,PyrR,0.0,0.0,1.0,1.0,1.0,10.0,10.0,10,1.0,,0.0,regulatory,Nucleotide Metabolism
+uncharacterized-2,,,,,,,,,5,,,0.0008683500870860783,uncharacterized,Uncharacterized
+uncharacterized-3,,,,,,,,,4,,,0.0013718053376938766,uncharacterized,Uncharacterized
+uncharacterized-4,,,,,,,,,3,,,0.0022912239172270255,uncharacterized,Uncharacterized
+uncharacterized-5,,,,,,,,,14,,,0.0,uncharacterized,Uncharacterized
+Stress Response and Proteostasis,,,,,,,,,15,,,0.0,functional,Stress Response
+uncharacterized-6,,,,,,,,,16,,,0.00023229259972079586,uncharacterized,Uncharacterized
+uncharacterized-7,,,,,,,,,13,,,0.0,uncharacterized,Uncharacterized
+uncharacterized-8,,,,,,,,,14,,,0.0,uncharacterized,Uncharacterized
+uncharacterized-9,,,,,,,,,12,,,0.0014775867756696703,uncharacterized,Uncharacterized
+SG_2,,,,,,,,,3,,True,0.0009389350194581869,single_gene,Single Gene
