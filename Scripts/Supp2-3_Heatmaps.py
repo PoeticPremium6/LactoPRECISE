@@ -15,14 +15,14 @@ sns.set(font_scale=0.45)
 g = sns.clustermap(clusters)
 plt.setp(g.ax_heatmap.get_xticklabels(), fontweight='bold')
 plt.setp(g.ax_heatmap.get_yticklabels(), fontweight='bold')
-plt.savefig("/Users/josspa/iMODULON/Manuscript/Figures/Supplementary/First_Clustering.png", dpi=300, bbox_inches='tight')
+plt.savefig("First_Clustering.png", dpi=300, bbox_inches='tight')
 # clear the figure after saving it
 plt.close()
 # generate second clustermap
 ax = sns.clustermap(clusters, cmap='vlag', annot=True)
 plt.setp(ax.ax_heatmap.get_xticklabels(), fontweight='bold')
 plt.setp(ax.ax_heatmap.get_yticklabels(), fontweight='bold')
-plt.savefig("/Users/josspa/iMODULON/Manuscript/Figures/Supplementary/Second_Clustering.png", dpi=300, bbox_inches='tight')
+plt.savefig("Second_Clustering.png", dpi=300, bbox_inches='tight')
 # clear the figure after saving it
 plt.close()
 
@@ -33,4 +33,4 @@ cluster_activities(ica_data, show_best_clusters=True, n_best_clusters=5)
 figures = [plt.figure(n) for n in plt.get_fignums()]
 # Save each figure independently
 for i, figure in enumerate(figures):
-    figure.savefig(f"/Users/josspa/iMODULON/Manuscript/Figures/Supplementary/Best_Clustering_{i}.png", dpi=300, bbox_inches='tight')
+    figure.savefig(f"Best_Clustering_{i}.png", dpi=300, bbox_inches='tight')
