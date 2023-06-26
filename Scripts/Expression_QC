@@ -11,9 +11,9 @@ sns.set_style('ticks')
 
 ### Inputs
 #Enter path of log-TPM, MultiQC, and metadata files here
-logTPM_file = path.join('..','data','raw_data','/Users/josspa/iMODULON/log_tpm_final.csv') # Enter log-TPM filename here
-multiqc_file = path.join('..','data','raw_data','/Users/josspa/iMODULON/multiqc_stats_final.tsv') # Enter MultiQC stats filename here
-metadata_file = path.join('..','data','raw_data','/Users/josspa/iMODULON/L_reuteri_metadata_final.tsv') # Enter metadata filename here
+logTPM_file = path.join('..','data','raw_data','log_tpm_final.csv') # Enter log-TPM filename here
+multiqc_file = path.join('..','data','raw_data','multiqc_stats_final.tsv') # Enter MultiQC stats filename here
+metadata_file = path.join('..','data','raw_data','L_reuteri_metadata_final.tsv') # Enter metadata filename here
 
 #Load Expression Data
 DF_log_tpm = pd.read_csv(logTPM_file,index_col=0).fillna(0)
@@ -179,8 +179,8 @@ _,_,pcts = plt.pie(pass_qc.value_counts().reindex([False,True]),
         autopct='%.0f%%',textprops={'size':16});
 
 #Save current metadata
-metadata_all_qc_file = path.join('..', 'data', 'interim', '/Users/josspa/iMODULON/metadata_qc_part1_all.tsv') # Enter filename for full metadata QC file
-metadata_qc_file = path.join('..', 'data', 'interim', '/Users/josspa/iMODULON/metadata_qc_part1.tsv') # Enter filename for metadata QC file with only passing datasets
+metadata_all_qc_file = path.join('..', 'data', 'interim', 'metadata_qc_part1_all.tsv') # Enter filename for full metadata QC file
+metadata_qc_file = path.join('..', 'data', 'interim', 'metadata_qc_part1.tsv') # Enter filename for metadata QC file with only passing datasets
 DF_metadata.to_csv(metadata_all_qc_file, sep='\t')
 DF_metadata_passed.to_csv(metadata_qc_file, sep='\t')
 
@@ -202,9 +202,9 @@ from tqdm.notebook import tqdm
 sns.set_style('ticks')
 
 #Input files from curation QC
-logTPM_file = path.join('..','data','raw_data','/Users/josspa/iMODULON/log_tpm_final.csv') # Enter log-TPM filename here
-all_metadata_file = path.join('..','data','interim','/Users/josspa/iMODULON/metadata_qc_part1_all.tsv') # Enter full metadata filename here
-metadata_file = path.join('..','data','interim','/Users/josspa/iMODULON/metadata_qc_curated.tsv') # Enter curated metadata filename here
+logTPM_file = path.join('..','data','raw_data','log_tpm_final.csv') # Enter log-TPM filename here
+all_metadata_file = path.join('..','data','interim','metadata_qc_part1_all.tsv') # Enter full metadata filename here
+metadata_file = path.join('..','data','interim','metadata_qc_curated.tsv') # Enter curated metadata filename here
 
 ##Load Expression Data
 DF_log_tpm = pd.read_csv(logTPM_file,index_col=0).fillna(0)
@@ -347,10 +347,10 @@ for name,group in DF_metadata_final.groupby('project'):
 DF_log_tpm_norm = pd.concat(project_exprs,axis=1)
 
 #Save final datasets
-logTPM_qc_file = path.join('..','data','processed_data','/Users/josspa/iMODULON/log_tpm_20230223.csv')
-logTPM_norm_file = path.join('..','data','processed_data','/Users/josspa/iMODULON/log_tpm_norm_20230223.csv')
-final_metadata_file = path.join('..','data','processed_data','/Users/josspa/iMODULON/metadata_20230223.tsv')
-final_metadata_all_file = path.join('..','data','interim','/Users/josspa/iMODULON/metadata_qc_part2_all_20230223.tsv')
+logTPM_qc_file = path.join('..','data','processed_data','log_tpm_20230223.csv')
+logTPM_norm_file = path.join('..','data','processed_data','log_tpm_norm_20230223.csv')
+final_metadata_file = path.join('..','data','processed_data','metadata_20230223.tsv')
+final_metadata_all_file = path.join('..','data','interim','metadata_qc_part2_all_20230223.tsv')
 
 DF_log_tpm_final.to_csv(logTPM_qc_file)
 DF_log_tpm_norm.to_csv(logTPM_norm_file)
