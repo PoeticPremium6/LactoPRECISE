@@ -20,6 +20,34 @@ from sklearn.preprocessing import StandardScaler
 import copy
 import random
 import statistics
+import matplotlib.patheffects as path_effects
+
+#Let's plot the gene weights for both L. reuteri & Ecoli
+#Let's plot the gene weights for both L. reuteri & Ecoli
+
+fig, ax = plt.subplots(1, 2, figsize=(15, 5))  # increased figure size for additional space
+
+# Plot the first figure
+plot_gene_weights(ecoli_data, 'ArgR', show_labels=False, ax=ax[0])
+title = ax[0].set_title("Ecoli ArgR")
+title.set_path_effects([path_effects.withStroke(linewidth=1.5, foreground='black')])
+ax[0].tick_params(axis='both', which='major', labelsize=10)
+leg1 = ax[0].legend(fontsize='small', bbox_to_anchor=(1.05, 1), loc='upper left')  # shift the legend to right of plot
+
+# Plot the second figure
+plot_gene_weights(ica_data, 'ArgR', show_labels=False, ax=ax[1])
+title = ax[1].set_title("Lreuteri ArgR")
+title.set_path_effects([path_effects.withStroke(linewidth=1.5, foreground='black')])
+ax[1].tick_params(axis='both', which='major', labelsize=10)
+leg2 = ax[1].legend(fontsize='x-small', bbox_to_anchor=(1.05, 1), loc='upper left')  # shift the legend to right of plot
+
+# Adjust space between plots and increase left margin
+plt.subplots_adjust(left=0.05, wspace=0.8, right=0.75)
+
+# Save the figure
+plt.savefig("Shared_ArgR.png", dpi=300, bbox_inches='tight')
+
+
 
 #Add L. reuteri dataframe
 gene_table = pd.read_csv('gene_table.csv')
