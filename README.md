@@ -11,10 +11,5 @@ Characterize iModulons using PyModulon (Step 5)
 
 iModulons are independently-modulated groups of genes that are computed through Independent Component Analysis (ICA) of a gene expression dataset. To learn more about iModulons or explore published iModulons, visit iModulonDB or see our publications for Escherichia coli, Staphylococcus aureus, or Bacillus subtilis.
 
-Setup
-Pre-requisite software is listed within each step of the workflow. In addition, we have provided pre-built Docker containers with all the necessary software.
-
-To begin, install Docker and Nextflow.
-
 Cite
 A pre-print is being prepared for this tutorial workflow.
