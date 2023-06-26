@@ -173,6 +173,6 @@ plt.yticks(range(10, 0, -1), labels=new_labels, fontsize=30, fontweight='bold') 
 plt.xticks(fontsize=14, fontweight='bold')  # Set font size and weight for x-axis labels
 plt.title('Top 10 Explained Variance', fontsize=18, fontweight='bold')  # Set title font weight
 plt.tight_layout()
-plt.savefig("/Users/josspa/iMODULON/Manuscript/Figures/Figure_1/top10_Variance.png", dpi=300, bbox_inches='tight')
+plt.savefig("top10_Variance.png", dpi=300, bbox_inches='tight')
 plt.show()
 df_rec_var.head(10)
