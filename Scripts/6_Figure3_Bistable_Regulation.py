@@ -4,7 +4,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-data = pd.read_csv('/Users/josspa/iMODULON/Manuscript/Figure3_Input.csv')
+data = pd.read_csv('Figure3_Input.csv')
 #Negative#LAC_011/12 Pectin / LAC_064/65 woThiamin / LAC_105-106 Ecoli_CDM,
 #Positive #LAC_019/20 Glucose_ph67/ LAC_021-23 Glucose_pH74/ LAC_086-87 Human Milk
 
@@ -32,14 +32,14 @@ ax.set_xticklabels(conditions)
 ax.legend()
 plt.tight_layout()
 plt.show()
-plt.savefig("/Users/josspa/iMODULON/Manuscript/Figures/Figure_3/Barplot.png", dpi=300, bbox_inches='tight')
+plt.savefig("Barplot.png", dpi=300, bbox_inches='tight')
 
 
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 #Plot Heatmap
-data = pd.read_csv('/Users/josspa/iMODULON/Manuscript/Figure3_Input.csv')
+data = pd.read_csv('Figure3_Input.csv')
 # Extract the necessary data for plotting
 sample_names = data.columns[1:]
 imodulon_names = data.iloc[[0, 1], 0]
@@ -71,7 +71,7 @@ ax.set_yticklabels(imodulon_names, fontsize=10)
 # Adjust the layout to accommodate the rotated x-axis labels
 plt.tight_layout()
 # Save the plot to a file
-plt.savefig("/Users/josspa/iMODULON/Manuscript/Figures/Figure_3/Heatmap.png", dpi=300, bbox_inches='tight')
+plt.savefig("Heatmap.png", dpi=300, bbox_inches='tight')
 
 from pymodulon.plotting import *
 #Let's look at outliers here
@@ -96,7 +96,7 @@ legend = plt.legend(loc='upper right')
 for text in legend.get_texts():
     text.set_fontsize(7)  # Adjust the font size of the legend
 # Save the plot to a file
-plt.savefig("/Users/josspa/iMODULON/Manuscript/Figures/Figure_3/FMN_vs_FabT.png", dpi=300, bbox_inches='tight')
+plt.savefig("FMN_vs_FabT.png", dpi=300, bbox_inches='tight')
 
 #Let's plot a DIMA of the bistable conditions
 plot_dima(ica_data, [groups=groups],show_labels=True, threshold=9, table=True)
@@ -113,4 +113,4 @@ plot_dima(ica_data,['LAC_011', 'LAC_012', 'LAC_064', 'LAC_065', 'LAC_105', 'LAC_
            'LAC_086', 'LAC_087'],
           show_labels=False, adjust_labels= False,
           threshold=20, table=False)
-plt.savefig("/Users/josspa/iMODULON/Manuscript/Figures/Figure_3/DIMA_Raw.png", dpi=300, bbox_inches='tight')
+plt.savefig("DIMA_Raw.png", dpi=300, bbox_inches='tight')
