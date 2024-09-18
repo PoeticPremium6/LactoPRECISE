@@ -1,6 +1,9 @@
 # LactoPRECISE
 LactoPRECISE: A comprehensive framework exploring Lactobacillus reuteri's genetic diversity, regulatory networks, and functional annotations for personalized medicine and microbial therapeutics.
 
+![msystems 01257-23 f001](https://github.com/user-attachments/assets/c9f89cc5-7539-4d2a-b807-b7b0e5e7a420)
+
+
 This repository presents a computational workflow to compute and characterize all iModulons for a selected organism. This occurs in five steps:
 
 Gather all publicly available RNA-seq data for the organism (Step 1)
